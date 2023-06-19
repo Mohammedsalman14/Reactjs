@@ -2,6 +2,7 @@ import React from 'react';
 import './Content.css';
 import { useState } from 'react';
 
+
 const Content = () => {
     // function handlenamesChange() {
     //     const names = ["Earn", "Grow", "Give"];
@@ -10,7 +11,7 @@ const Content = () => {
     // }
 
 
-    const [count2, updatecount] = useState(1);
+    const [count2, updatecount] = useState(()=>1);
 
     function increment() {
         updatecount(count2 + 1)
@@ -18,7 +19,10 @@ const Content = () => {
     function decrement() {
         updatecount(count2 - 1);
     }
-
+    // const namee=()=>{
+    //     return console.log("visit mdsalman.com");
+    // }
+    // const [name,setname]=useState(()=>namee())
     const [count, setCount] = useState(99)
     function incrementFunction() {
         setCount((preCount) => { return preCount + 1 });

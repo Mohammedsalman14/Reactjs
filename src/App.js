@@ -2,6 +2,7 @@ import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";
 import './App.css';
+import Exe from "./Exe";
 function App(){
  
   
@@ -9,9 +10,10 @@ function App(){
     <div>
       {/* subscribe to mdsalman
       <p>Let's {handlenamesChange()} money</p> */}
-      <Header/>
-      <Content/>
+      {/* <Header/>
+      <Content/> */}
       <Footer/>
+      <Exe/>
     </div>
   );
 }
